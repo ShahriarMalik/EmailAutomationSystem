@@ -25,21 +25,10 @@ This project demonstrates the integration of UiPath with Python to automate the 
 
 Below is an outline of the directory structure for the Intelligent Email Management System project, detailing where key components are located:
 
-/Intelligent-Email-Management-System
-|-- /src
-| |-- /ui_path
-| | |-- Main.xaml # Main UiPath workflow for email processing
-| | |-- Other UiPath related files
-| |-- /python
-| | |-- email_processor.py # Flask application for backend processing
-| | |-- requirements.txt # Python dependencies
-
-|-- README.md # Project documentation
-
 - **/src**: Source files for the project.
   - **/ui_path**: Contains UiPath workflows (.xaml files).
   - **/python**: Contains Python scripts including the Flask app and a requirements file for setting up the Python environment.
-
+- **README.md: Project documentation
 
 ### Setup and Installation
 1. **Python Environment Setup**:
