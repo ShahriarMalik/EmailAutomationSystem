@@ -1,33 +1,33 @@
 # Intelligent Email Management System
 
 ## Project Overview
-This project demonstrates an integration of UiPath with Python to automate the process of managing emails. It categorizes emails and creates tasks in JIRA based on the content and urgency of each email. This system aims to enhance workflow efficiency by automating the email summarization and task creation processes.
+This project demonstrates the integration of UiPath with Python to automate the process of email management. It automates tasks such as email categorization and sentiment analysis and creates corresponding tasks in JIRA based on the urgency and content of the emails. The goal is to streamline internal communications within an organization by efficiently managing email workflows.
 
 ## Technologies Used
-- **UiPath**: Automates interactions with email systems and manages workflow sequences.
-- **Python**: Handles backend logic including email categorization and sentiment analysis.
-- **Flask**: Serves as the API layer to receive processed data from UiPath and interact with JIRA.
-- **JIRA API**: Used to create and manage tasks based on email content.
+- **UiPath**: Used for automating interactions with email systems and managing workflows.
+- **Python**: Manages backend logic including email categorization and sentiment analysis.
+- **Flask**: Serves as the API layer that interfaces between UiPath and the backend logic.
+- **JIRA API**: Utilized to create and manage tasks based on processed email data.
 
 ## Features
-- Email summarization to extract key points.
-- Categorization of emails into Urgent, Follow-up, and Informational.
-- Automatic JIRA task creation based on email urgency and category.
+- **Email Summarization**: Extracts key points from emails for quick insights.
+- **Email Categorization**: Classifies emails into categories such as Urgent, Follow-up, and Informational.
+- **Automated JIRA Task Creation**: Generates tasks in JIRA based on the email content and categorization, tagged with appropriate priorities.
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- UiPath Studio 2021.10
-- Access to JIRA Software
+- Python 3.8 or higher
+- UiPath Studio 2021.10 or newer
+- Access to JIRA and corresponding API keys
 
 ### Setup and Installation
 1. **Python Environment Setup**:
-   - Install required Python packages:
+   - Install the required Python packages:
      ```bash
      pip install flask nltk requests
      ```
-   - Set up the Flask application:
+   - Initialize the Flask application to handle requests:
      ```bash
      export FLASK_APP=app.py
      export FLASK_ENV=development
@@ -36,22 +36,22 @@ This project demonstrates an integration of UiPath with Python to automate the p
 
 2. **UiPath Setup**:
    - Open the provided `.xaml` files in UiPath Studio.
-   - Configure the project dependencies and ensure the Python activities are correctly set up.
+   - Ensure all dependencies, especially for Python activities, are correctly configured.
 
 3. **JIRA Configuration**:
-   - Configure the JIRA API integration by setting your JIRA instance URL, username, and API token in the Python script.
+   - Set up the JIRA API integration by configuring your JIRA instance URL, username, and API token in the Flask application.
 
 ### Running the Application
-- Start the Flask server as outlined above.
-- Run the UiPath automation from UiPath Studio or UiPath Assistant.
+- Start the Flask server as outlined in the setup instructions.
+- Execute the UiPath automation from UiPath Studio or UiPath Assistant to process emails and observe the results in JIRA.
 
 ## How It Works
-- UiPath retrieves emails and sends email content to the Flask API.
-- The Flask API processes the email content, categorizes it, analyzes sentiment, and based on predefined rules, decides if a task should be created in JIRA.
-- If required, a JIRA task is created with details about the email and its categorization.
+- **Email Retrieval**: UiPath retrieves emails and sends the content to the Flask API.
+- **Email Processing**: The Flask API uses Python to analyze the content, categorize emails, and determine their sentiment.
+- **Task Creation**: Based on the analysis, tasks are created in JIRA with details such as category, priority, and a summary of the email content.
 
 ## Contributing
-Contributions to this project are welcome! Please fork the repository and submit a pull request with your proposed changes.
+Contributions are welcome! If you have improvements or corrections, please fork the repository and submit a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License.
