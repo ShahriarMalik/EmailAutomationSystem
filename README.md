@@ -28,7 +28,7 @@ Below is an outline of the directory structure for the Intelligent Email Managem
 - **/src**: Source files for the project.
   - **/ui_path**: Contains UiPath workflows (.xaml files).
   - **/python**: Contains Python scripts including the Flask app and a requirements file for setting up the Python environment.
-- **README.md: Project documentation
+- **README.md**: Project documentation
 
 ### Setup and Installation
 1. **Python Environment Setup**:
