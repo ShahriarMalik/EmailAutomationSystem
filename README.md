@@ -36,7 +36,7 @@ This project demonstrates the integration of UiPath with Python to automate the 
 
 2. **UiPath Setup**:
    - Open the provided `.xaml` files in UiPath Studio.
-   - Ensure all dependencies, especially for Python activities, are correctly configured.
+   - Ensure all dependencies are correctly configured.
 
 3. **JIRA Configuration**:
    - Set up the JIRA API integration by configuring your JIRA instance URL, username, and API token in the Flask application.
